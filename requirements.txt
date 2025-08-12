@@ -1,0 +1,9 @@
+Django>=4.1
+djangorestframework
+djangorestframework-simplejwt
+psycopg2-binary
+django-cors-headers
+django-environ
+argon2-cffi
+pytest-django
+gunicorn
