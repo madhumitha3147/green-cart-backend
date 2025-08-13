@@ -126,8 +126,10 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS settings
-CORS_ALLOW_ALL_ORIGINS = True  # Change to specific origins in production
-
+CORS_ALLOW_ALL_ORIGINS = False  # Change to specific origins in production
+CORS_ALLOWED_ORIGINS = [
+    "https://green-cart-frontend-weld.vercel.app",
+]
 # DRF settings with JWT
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
