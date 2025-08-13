@@ -8,3 +8,4 @@ argon2-cffi
 pytest-django
 gunicorn
 whitenoise
+dj-database-url
