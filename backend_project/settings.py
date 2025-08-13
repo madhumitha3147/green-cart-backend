@@ -88,11 +88,11 @@ WSGI_APPLICATION = 'backend_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'green_cart',      # Your database name
-        'USER': 'postgres1',       # The new user you created
-        'PASSWORD': 'Madhu@31',    # Password you set
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'NAME': env("DB_NAME"),
+        'USER': env("DB_USER"),
+        'PASSWORD': env("DB_PASSWORD"),
+        'HOST': env("DB_HOST"),
+        'PORT': env("DB_PORT"),
     }
 }
 
